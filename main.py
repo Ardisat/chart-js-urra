@@ -21,6 +21,10 @@ def js():
 def first_chart():
     return render_template("int_ext_data.html")
 
+@app.route('/second-chart')
+def second_chart():
+    return render_template("int_ext_data2.html")
+
 @app.route('/ajax')
 def ajax():
     return render_template("ajax.html")

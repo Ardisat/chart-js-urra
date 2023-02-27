@@ -1,20 +1,28 @@
 var ourBar = $("#chartBar");
 
 var barChart = new Chart(ourBar, {
-    type: 'bar',
+    type: 'doughnut',
     data: {
         labels: labels,
         datasets: [
             {
                 label: 'Worldwide IC Unit Shipment Growth',
                 data: cb,
-                backgroundColor: 'rgba(30, 180, 40, 0.4)',
+                backgroundColor: 'rgba(19, 149, 80)',
                 borderWidth: 1,
                 borderRadius: 1,
                 //borderColor: 'rgba(54, 162, 235, 0.9)'
             }
         ]
     },
+    options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          }
+        }
+      }
 })
 
 
