@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Font';
+    src: url('../fonts/font.woff2') format('woff2');
+}
+
+:root {
+    --border-radius: 5px;
+
+    --red: 226, 78, 78;
+    --green: 14, 194, 86;
+    --blue: 1, 173, 239;
+}
+
+* {
+    box-sizing: border-box; 
+    text-decoration: none;
+    transition: all .3s;
+    border-radius: var(--border-radius);
+}
+
+h1, h2, h3, h4, h5 {font-weight: normal;}
+
+button {
+    width: fit-content;
+    font-size: 18px;
+    border: 2px solid rgb(var(--green));
+    padding: 8px 12px;
+    background-color: white;
+    color: rgb(var(--green));
+}
+
+.active-btn {
+    background: rgb(var(--green));
+    color: white;
+}
+
+body {
+    background: rgb(240, 240, 240);
+    margin: 0;
+    padding: 0;
+    font-family: 'Font';
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container {
+    min-width: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+}
+
+.sections {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
