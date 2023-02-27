@@ -17,6 +17,10 @@ def home():
 def js():
     return render_template("js.html")
 
+@app.route('/first-chart')
+def first_chart():
+    return render_template("int_ext_data.html")
+
 @app.route('/ajax')
 def ajax():
     return render_template("ajax.html")
