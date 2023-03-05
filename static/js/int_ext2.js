@@ -7,8 +7,8 @@ var barChart = new Chart(ourBar, {
         datasets: [
             {
                 label: 'Worldwide IC Unit Shipment Growth',
+                backgroundColor: ['#E6E6FA', '#00A550', '#1A162A', '#9F2B68', '#FAF0E6', '#FFAACC', '#C8385A', '#6D6552', '#5D76CB', '#395778'],
                 data: cb,
-                backgroundColor: 'rgba(19, 149, 80)',
                 borderWidth: 1,
                 borderRadius: 1,
                 //borderColor: 'rgba(54, 162, 235, 0.9)'
